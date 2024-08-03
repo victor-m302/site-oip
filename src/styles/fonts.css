@@ -1,0 +1,7 @@
+/* assets/fonts.css */
+
+@font-face {
+    font-family: 'Fonte1'; /* Nome da fonte */
+    src: local('Fonte1'), url('../assets/fonts/TT Interphases Pro Trial Bold.ttf'), format('ttf');
+  }
+  
