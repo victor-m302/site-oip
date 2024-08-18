@@ -15,6 +15,7 @@ import NossoTrabalho from '../components/home/NossoTrabalho';
 // import StuckWPP from './components/StuckWPP';
 
 
+
 function Home() {
 
   return (

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+    Container,
     Divider,
     Header,
     Icon,
@@ -7,9 +8,7 @@ import {
 } from 'semantic-ui-react';
 
 import imgEquipe1 from '../../assets/homepage/17_equipe_1.jpg';
-import imgEquipe2 from '../../assets/homepage/17_equipe_2.jpg';
-
-
+//import imgEquipe2 from '../assets/homepage/17_equipe_2.jpg';
 
 
 export default function Historia() {
@@ -20,9 +19,11 @@ export default function Historia() {
     }
 
     return (
-        <Segment textAlign='center'>
 
-            <Header as='h3' style={{ fontSize: '2em' }}>
+
+        <Segment>
+
+            <Header as='h3' style={{ fontSize: '2em', textAlign: 'center' }} >
                 Nossa História
             </Header>
 
@@ -52,14 +53,12 @@ export default function Historia() {
                 </p>
             </div>
 
-            <div className="ui images">
-                <img className="ui large image" src={imgEquipe1} />
-                {/* <img className="ui large image" src={imgEquipe2} /> */}
-            </div>
+            <Container centered>
+                <img className="ui big image centered" src={imgEquipe1} />
+            </Container>
 
-            <br/>
+            </Segment>
 
-        </Segment>
 
 
     )

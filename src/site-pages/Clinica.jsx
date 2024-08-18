@@ -10,7 +10,7 @@ function Clinica() {
         <div>
             <SobreClinica/>
 
-            <Dentistas/>
+            {/* <Dentistas/> */}
         </div>
 
     )

@@ -29,11 +29,6 @@ export default function SobreClinica() {
 
             <Divider/>
 
-                <Header as="h2" textAlign='left'>
-                    <Icon name='quote left' size='big' style={{marginLeft: '10%'}} />  Frase Força</Header>
-
-            <Divider/>
-
             <div style={paragraphStyle}>
 
             <p>

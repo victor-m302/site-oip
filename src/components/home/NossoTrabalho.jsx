@@ -48,6 +48,10 @@ function NossoTrabalho() {
     },
   ]
 
+  const paragraphStyle = {
+    fontSize: '1.33em',
+    padding: '4em',
+}
 
   return (
 
@@ -58,25 +62,30 @@ function NossoTrabalho() {
         Especialidades
       </Header>
 
-      {!mostrarConteudo && (
-        <div style={{ margin: '4em' }}>
-          <CardGroup itemsPerRow={3}>
+
+      <div style={paragraphStyle}>
+
+      <p>
+        Ambiente aconchegante, equipamentos de ponta e uma equipe de dentistas experientes e qualificados.      
+      </p>
+      <p>
+      Confira nossos tratamentos/ especialidades:
+      </p>
+
+    </div>
+
+
+      <div style={{ margin: '2em' }}>
+          <CardGroup itemsPerRow={6}>
             <CardServico title={cards[0].title} image={cards[0].image} desc={cards[0].desc} />
             <CardServico title={cards[1].title} image={cards[1].image} desc={cards[1].desc} />
             <CardServico title={cards[2].title} image={cards[2].image} desc={cards[2].desc} />
-          </CardGroup>
-        </div>
-      )}
-
-      {mostrarConteudo && (
-        <div style={{ margin: '4em' }}>
-          <CardGroup itemsPerRow={3}>
             <CardServico title={cards[3].title} image={cards[3].image} desc={cards[3].desc} />
             <CardServico title={cards[4].title} image={cards[4].image} desc={cards[4].desc} />
             <CardServico title={cards[5].title} image={cards[5].image} desc={cards[5].desc} />
           </CardGroup>
         </div>
-      )}
+
 
 
       {/* <div style={{margin: '0em 4em'}}> */}
@@ -99,3 +108,25 @@ function NossoTrabalho() {
 
 
 export default NossoTrabalho;
+
+const a =`
+      {!mostrarConteudo && (
+        <div style={{ margin: '4em' }}>
+          <CardGroup itemsPerRow={3}>
+            <CardServico title={cards[0].title} image={cards[0].image} desc={cards[0].desc} />
+            <CardServico title={cards[1].title} image={cards[1].image} desc={cards[1].desc} />
+            <CardServico title={cards[2].title} image={cards[2].image} desc={cards[2].desc} />
+          </CardGroup>
+        </div>
+      )}
+
+      {mostrarConteudo && (
+        <div style={{ margin: '4em' }}>
+          <CardGroup itemsPerRow={3}>
+            <CardServico title={cards[3].title} image={cards[3].image} desc={cards[3].desc} />
+            <CardServico title={cards[4].title} image={cards[4].image} desc={cards[4].desc} />
+            <CardServico title={cards[5].title} image={cards[5].image} desc={cards[5].desc} />
+          </CardGroup>
+        </div>
+      )}
+`

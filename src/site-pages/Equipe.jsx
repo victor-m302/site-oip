@@ -1,11 +1,11 @@
-import { Segment, Header, Container } from "semantic-ui-react";
+import { Segment, Header, Container, Divider } from "semantic-ui-react";
 
 import CardsEquipe from '../components/equipe/CardsEquipe'
 
+import imgEquipe2 from '../assets/homepage/17_equipe_2.jpg';
+
 
 function Equipe() {
-
-
 
 
     return (
@@ -15,11 +15,27 @@ function Equipe() {
             </Header>
 
             <Header as="h5">
-                inserir texto
+                ""
             </Header>
 
 
         <CardsEquipe/>
+
+
+            
+        <Segment>
+            <Header>
+                Equipe de dentistas, auxiliares e estagiárias 
+            </Header>
+
+            <Divider/>
+
+            <img src={imgEquipe2} alt="img_17" style={{width: '60%'}} />
+        </Segment>
+
+
+
+
 
         </Container>
 
