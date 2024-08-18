@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Segment, Card, Image, CardGroup, ButtonGroup, Button } from 'semantic-ui-react';
+import { Segment, Card, Image, CardGroup, ButtonGroup, Button, Header, Container } from 'semantic-ui-react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CardServico from './CardServico';
@@ -37,7 +37,7 @@ function NossoTrabalho() {
       image: 'carrossel2/c2_item4.png'
     },
     {
-      title: 'Próteses',
+      title: 'Alinhadores Invisalign',
       desc: 'A prótese visa substituir total ou parcialmente um ou mais dentes e tecidos circunvizinhos. Pode ser confeccionada de diversos materiais com a função de restabelecer a estética, a fonética e a função mastigatória. Além disso, as próteses podem ser fixas, parciais removíveis, totais ou sobre implantes.',
       image: 'carrossel2/c2_item5.png'
     },
@@ -53,13 +53,19 @@ function NossoTrabalho() {
 
     <Segment>
 
-      <div style={{margin: '0em 4em'}}>
+
+      <Header as="h1" textAlign='center'>
+        Especialidades
+      </Header>
+
+      {/* <div style={{margin: '0em 4em'}}> */}
+      <Container textAlign='right'>
         <ButtonGroup>
           <Button onClick={handleButtonClick} icon='angle left' />
           <Button onClick={handleButtonClick} icon='angle right' />
         </ButtonGroup>
-
-      </div>
+      </Container>
+      {/* </div> */}
 
 
       {!mostrarConteudo && (

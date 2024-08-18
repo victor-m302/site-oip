@@ -12,7 +12,7 @@ import imgEquipe2 from '../../assets/homepage/17_equipe_2.jpg';
 
 
 
-export default function Historia() {
+export default function SobreClinica() {
 
     const paragraphStyle = {
         fontSize: '1.33em',

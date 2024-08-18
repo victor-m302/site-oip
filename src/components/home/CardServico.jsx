@@ -14,7 +14,7 @@ const CardServico = (props) => (
     <Image src={props.image} wrapped ui={false} />
     <CardContent>
       <CardHeader>{props.title}</CardHeader>
-      <CardMeta>2016</CardMeta>
+      {/* <CardMeta>2016</CardMeta> */}
       <CardDescription>
         {props.desc}
       </CardDescription>
