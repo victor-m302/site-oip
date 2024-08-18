@@ -1,4 +1,4 @@
-import { Segment, Header } from "semantic-ui-react";
+import { Segment, Header, Container } from "semantic-ui-react";
 
 import CardsEquipe from '../components/equipe/CardsEquipe'
 
@@ -9,20 +9,19 @@ function Equipe() {
 
 
     return (
-
-        <Segment>
-            <Header as="h3">
+        <Container textAlign="center">
+            <Header as="h1">
                 Doutoras
             </Header>
 
             <Header as="h5">
-                Descrição
+                inserir texto
             </Header>
 
 
         <CardsEquipe/>
 
-        </Segment>
+        </Container>
 
     )
 }

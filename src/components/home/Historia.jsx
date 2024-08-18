@@ -53,9 +53,11 @@ export default function Historia() {
             </div>
 
             <div className="ui images">
-                <img className="ui medium image" src={imgEquipe1} />
-                <img className="ui large image" src={imgEquipe2} />
+                <img className="ui large image" src={imgEquipe1} />
+                {/* <img className="ui large image" src={imgEquipe2} /> */}
             </div>
+
+            <br/>
 
         </Segment>
 

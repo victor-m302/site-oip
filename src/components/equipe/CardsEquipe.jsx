@@ -11,7 +11,7 @@ function CardsEquipe() {
   }
 
   return (
-    <Card.Group>
+    <Card.Group itemsPerRow={4}>
       {/* Dra. Vânia */}
       <Card>
         <Image src={dentistas.dra_vania} wrapped ui={false} />
