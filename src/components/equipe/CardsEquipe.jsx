@@ -3,11 +3,18 @@ import { Card, Image } from 'semantic-ui-react';
 
 function CardsEquipe() {
 
+  const dentistas = {
+    dra_vania: 'dentistas/13_Dra_Vania.jpg',
+    dra_sandra: 'dentistas/14_Dra_Sandra.jpg',
+    dra_debora: 'dentistas/15_Dra_Debora.jpg',
+    dra_valeska: 'dentistas/16_Dra_Valeska.jpg',
+  }
+
   return (
     <Card.Group>
       {/* Dra. Vânia */}
       <Card>
-        <Image src="13_Dra_Vania.jpg" wrapped ui={false} />
+        <Image src={dentistas.dra_vania} wrapped ui={false} />
         <Card.Content>
           <Card.Header>Dra. Vânia Cristina Pintaudi Amorim</Card.Header>
           <Card.Meta>CROSP: 32.664</Card.Meta>
@@ -23,7 +30,7 @@ function CardsEquipe() {
 
       {/* Dra. Sandra */}
       <Card>
-        <Image src="14_Dra_Sandra.jpg" wrapped ui={false} />
+        <Image src={dentistas.dra_sandra} wrapped ui={false} />
         <Card.Content>
           <Card.Header>Dra. Sandra Duarte Oliveira</Card.Header>
           <Card.Meta>CROSP: 53.189</Card.Meta>
@@ -36,7 +43,7 @@ function CardsEquipe() {
 
       {/* Dra. Débora */}
       <Card>
-        <Image src="15_Dra_Debora.jpg" wrapped ui={false} />
+        <Image src={dentistas.dra_debora} wrapped ui={false} />
         <Card.Content>
           <Card.Header>Dra. Débora Rolim Escanhoela</Card.Header>
           <Card.Meta>CROSP: 66.210</Card.Meta>
@@ -49,7 +56,7 @@ function CardsEquipe() {
 
       {/* Dra. Valeska */}
       <Card>
-        <Image src="16_Dra_Valeska.jpg" wrapped ui={false} />
+        <Image src={dentistas.dra_valeska} wrapped ui={false} />
         <Card.Content>
           <Card.Header>Dra. Valeska Pinheiro Ferreira de Sousa</Card.Header>
           <Card.Meta>CROSP: 161.532</Card.Meta>

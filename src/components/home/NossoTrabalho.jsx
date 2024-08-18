@@ -58,16 +58,6 @@ function NossoTrabalho() {
         Especialidades
       </Header>
 
-      {/* <div style={{margin: '0em 4em'}}> */}
-      <Container textAlign='right'>
-        <ButtonGroup>
-          <Button onClick={handleButtonClick} icon='angle left' />
-          <Button onClick={handleButtonClick} icon='angle right' />
-        </ButtonGroup>
-      </Container>
-      {/* </div> */}
-
-
       {!mostrarConteudo && (
         <div style={{ margin: '4em' }}>
           <CardGroup itemsPerRow={3}>
@@ -87,6 +77,19 @@ function NossoTrabalho() {
           </CardGroup>
         </div>
       )}
+
+
+      {/* <div style={{margin: '0em 4em'}}> */}
+      <Container textAlign='right'>
+        <ButtonGroup>
+          <Button onClick={handleButtonClick} icon='angle left' />
+          <Button onClick={handleButtonClick} icon='angle right' />
+        </ButtonGroup>
+      </Container>
+      {/* </div> */}
+
+      <br/><br/><br/>
+
     </Segment>
 
 

@@ -26,7 +26,7 @@ const Dentistas = () => (
     <CardContent>
       <Feed>
         <FeedEvent>
-          <FeedLabel image={img1} />nbnjfnbdddxxbnm,xxxxzbsssdfgsdfrgBNMBXXXXX
+          <FeedLabel image={img1} />
           <FeedContent>
             <FeedDate content='1 day ago' />
             <FeedSummary>
@@ -36,7 +36,7 @@ const Dentistas = () => (
         </FeedEvent>
 
         <FeedEvent>
-          <FeedLabel image='/images/avatar/small/molly.png' />
+          <FeedLabel image={img2}  />
           <FeedContent>
             <FeedDate content='3 days ago' />
             <FeedSummary>
@@ -46,7 +46,7 @@ const Dentistas = () => (
         </FeedEvent>
 
         <FeedEvent>
-          <FeedLabel image='/images/avatar/small/elliot.jpg' />
+          <FeedLabel image={img3}  />
           <FeedContent>
             <FeedDate content='4 days ago' />
             <FeedSummary>

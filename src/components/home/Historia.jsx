@@ -28,9 +28,12 @@ export default function Historia() {
 
             <Divider/>
 
-                <Header as="h2" textAlign='left'>
-                    <Icon name='quote left' size='big' style={{marginLeft: '10%'}} /> O seu sorriso é a nossa motivação
-                </Header>
+            <Header textAlign='left' style={{marginLeft: '10%'}}>
+                <Icon name='quote left' size='tiny' /> 
+                <Header.Content as={'h2'}>
+                    O seu sorriso é a nossa motivação
+                </Header.Content>
+            </Header>
 
             <Divider/>
 

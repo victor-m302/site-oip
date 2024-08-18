@@ -26,13 +26,6 @@ function Home() {
 
         <NossoTrabalho/>
 
-
-
-
-
-
-
-
       </div>
     
   )

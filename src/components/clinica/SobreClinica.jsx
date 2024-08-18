@@ -3,6 +3,7 @@ import {
     Divider,
     Header,
     Icon,
+    Message,
     Segment,
 } from 'semantic-ui-react';
 
@@ -23,37 +24,39 @@ export default function SobreClinica() {
         <Segment textAlign='center'>
 
             <Header as='h3' style={{ fontSize: '2em' }}>
-                Nossa História
+                A Clínica
             </Header>
 
             <Divider/>
 
                 <Header as="h2" textAlign='left'>
-                    <Icon name='quote left' size='big' style={{marginLeft: '10%'}} /> O seu sorriso é a nossa motivação
-                </Header>
+                    <Icon name='quote left' size='big' style={{marginLeft: '10%'}} />  Frase Força</Header>
 
             <Divider/>
 
             <div style={paragraphStyle}>
 
+            <p>
+            A OIP oferece 4 consultórios odontológicos com tecnologia de ponta, inclusive com o Scanner Itero que realiza check ups digitais e moldagens virtuais, possibilitando planejamentos mais assertivos para nossos pacientes. 
+            <br/>
+            Temos a sala de fluxo digital com Impressora 3D para obtenção de modelos, placas e guias cirúrgicos. 
+            <br/>
+            A nossa clínica conta também com sala de esterilização, onde se realiza todo o processo de desinfecção e esterilização dos materiais contaminados. 
+            <br/>
+            Possuímos ainda um laboratório de prótese equipado para trabalhos analógicos. 
+            <br/>
+            Por fim, não menos importante, na entrada temos uma recepção acolhedora e confortável para receber nossos clientes. 
+            </p>
+
+
+            <Message>
+                <Message.Header>Carrosel</Message.Header>
                 <p>
-                    A nossa história se iniciou em 1986 e, desde então, vem crescendo, inovando e sempre se atualizando com novos materiais e técnicas para melhor atender a todos com muita qualidade.
+                Imagens de 4 a 11 ( Obs. Tem fotos com o mesmo número que vc vê o que fica melhor)
                 </p>
+            </Message>            
 
-                <p>
-                    Atualmente, a clínica possui 4 salas de atendimentos com equipamentos modernos, sendo que uma delas tem total acessibilidade, sala de esterilização, laboratório de prótese e uma aconchegante recepção.
-                </p>
-
-                <p >
-                Contamos também com uma equipe multidisciplinar para suprir as necessidades estéticas e funcionais. O seu sorriso é a nossa motivação.
-                </p>
             </div>
-
-            <div className="ui images">
-                <img className="ui medium image" src={imgEquipe1} />
-                <img className="ui large image" src={imgEquipe2} />
-            </div>
-
         </Segment>
 
 
