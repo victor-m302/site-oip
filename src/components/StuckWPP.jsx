@@ -1,8 +1,9 @@
 import { createRef, useRef } from "react"
 import { Button, Grid, GridColumn, Header, Image, Rail, Segment, Sticky } from 'semantic-ui-react';
 
-import contato from '../assets/contato.png'
+//import contato from '../assets/contato.png'
 
+import contato from '/whatsapp.gif'
 
 export default function StuckWPP() {
 
@@ -20,7 +21,9 @@ export default function StuckWPP() {
     return (
 
         <div style={docsButtonStyle}>
-         <Image src={contato} size='tiny' circular />
+        <a href="https://api.whatsapp.com/send?phone=5511979795390&text=Odontologia%20OIP">
+          <Image alt='wpp' src={contato} size='tiny' circular />
+        </a>
         </div>
 
     );

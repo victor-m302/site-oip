@@ -1,47 +1,39 @@
-import 'semantic-ui-css/semantic.min.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import HomePanel from './components/HomePanel';
-import MyCarousel from './components/MyCarousel';
+import HomeLayout from "./site-structure/SiteLayout";
 
-import { Advertisement, Divider } from 'semantic-ui-react';
-import HomeSection from './components/HomeSection';
-import HomeSection2 from './components/HomeSection2';
-import StuckWPP from './components/StuckWPP';
+import Home from "./site-pages/Home";
+import Clinica from "./site-pages/Clinica";
+import Especialidades from "./site-pages/Especialidades";
+import Contato from "./site-pages/Contato";
+import Equipe from "./site-pages/Equipe";
+
 
 
 function App() {
 
-  return (
-      <div style={{backgroundColor: 'lightblue'}}>
-        <Navbar/>
 
-        {/* <div style={{position: 'fixed', 
-        zIndex:1000,
-        display: 'flex',
-        minHeight: 'calc(100vh - 40px)', // Adjust based on your header height
-        flexDirection: 'column'
-        
-        }}>2050 homens</div> */}
+    return (
+      <>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/site-oip' element={<HomeLayout/>}>
+              <Route path='/site-oip' element={<Home/>}/>
+              <Route path='/site-oip/clinica' element={<Clinica/>}/>
+              <Route path='/site-oip/equipe' element={<Equipe/>}/>
+              <Route path='/site-oip/especialidades' element={<Especialidades/>}/>
+              <Route path='/site-oip/contato' element={<Contato/>}/> 
+          
+            
+            </Route>
+          </Routes>               
+        </BrowserRouter>
+      
+      
+      </>
+      
+    )
 
-        <StuckWPP/>
-
-
-        <HomePanel/>
-
-
-        <HomeSection/>
-        
-
-        <HomeSection2/>
-
-        <Footer/>
-
-
-      </div>
-    
-  )
 }
 
-export default App
+export default App;
