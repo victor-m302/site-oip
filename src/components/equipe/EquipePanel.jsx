@@ -7,7 +7,7 @@ import {
 
 import '../../styles/fonts.css'
 
-function ClinicaPanel() {
+function EquipePanel() {
 
     const style = {
         backgroundColor: 'rgba(0,0,0,.87)',
@@ -20,30 +20,24 @@ function ClinicaPanel() {
 
 const segmentStyle = {
     margin: '-1em 0em 0em 0em', 
-    padding: '8em 0em', 
-    backgroundImage: "url('clinica/cover_recepcao.jpg')", 
+    padding: '18em 0em', 
+    backgroundImage: "url('dentistas/cover_equipe.jpg')", 
     //backgroundImage: "url('src/assets/bg-home-img.jpg')", 
     //backgroundImage: "url('../assets/bg-home-img.jpg')",
     backgroundSize: 'cover', // Ajuste o tamanho da imagem conforme necessário
     color: 'white', // Cor do texto no segmento
   };
- 
+  
 
     return (
 
 
         <Segment style={segmentStyle} vertical>
 
-        <Grid container stackable verticalAlign='middle'>
-          <Grid.Row>
-            <Grid.Column width={6}>
-              <Header as='h3' style={{color: 'white', fontSize: '2.7em', fontFamily: 'Fonte1'}}>
-              Ambiente aconchegante, equipamentos de ponta e equipe de dentistas experientes e qualificadas
+        <Grid container stackable verticalAlign='bottom'>
+              <Header as='h3' style={{paddingTop: '200px' ,color: 'white', fontSize: '2.7em', fontFamily: 'Fonte1'}}>
+              Nossa equipe está pronta para atender.
               </Header>
-            </Grid.Column>
-            <Grid.Column floated='right' width={8}>
-            </Grid.Column>
-          </Grid.Row>
         </Grid>
       </Segment>
 
@@ -55,4 +49,4 @@ const segmentStyle = {
 
 }
 
-export default ClinicaPanel;
+export default EquipePanel;

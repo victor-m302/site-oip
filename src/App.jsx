@@ -22,8 +22,7 @@ function App() {
               <Route path='/site-oip/clinica' element={<Clinica/>}/>
               <Route path='/site-oip/equipe' element={<Equipe/>}/>
               <Route path='/site-oip/especialidades' element={<Especialidades/>}/>
-              <Route path='/site-oip/contato' element={<Contato/>}/> 
-          
+              <Route path='/site-oip/contato' element={<Contato/>}/>
             
             </Route>
           </Routes>               

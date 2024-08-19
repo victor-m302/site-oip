@@ -4,7 +4,7 @@ import {
     Segment
 } from 'semantic-ui-react';
 
-import logoOIP from '../assets/logo.png'
+import logoOIP from '../assets/logo_nobg.png'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {

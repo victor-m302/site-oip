@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Segment, Card, Image, CardGroup, ButtonGroup, Button, Header, Container } from 'semantic-ui-react';
+import { Segment, Card, Image, CardGroup, ButtonGroup, Button, Header, Container, Message } from 'semantic-ui-react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CardServico from './CardServico';
@@ -57,6 +57,10 @@ function NossoTrabalho() {
 
     <Segment>
 
+    <Message negative>
+      <Message.Header> Esta seção será removida e substituída pela seção acima</Message.Header>
+    </Message>
+
 
       <Header as="h1" textAlign='center'>
         Especialidades
@@ -66,13 +70,10 @@ function NossoTrabalho() {
       <div style={paragraphStyle}>
 
       <p>
-        Ambiente aconchegante, equipamentos de ponta e uma equipe de dentistas experientes e qualificados.      
-      </p>
-      <p>
       Confira nossos tratamentos/ especialidades:
       </p>
 
-    </div>
+      </div>
 
 
       <div style={{ margin: '2em' }}>

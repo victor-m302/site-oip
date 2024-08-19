@@ -17,15 +17,20 @@ export default function Footer() {
   <Container style={{backgroundColor: '#ADD8E6'}}>
     <Grid divided  stackable>
     
-      <Grid.Row centered>
-          <Header as='h4' >
-            Endereço
-          </Header>
-        </Grid.Row>
 
-        <Grid.Row centered>
-          <p>Rua Ibitirama, Nº 670, bairro Vila Prudente CEP 03134-001 - São Paulo (SP)</p>
-        </Grid.Row>
+    <List>
+    <List.Item icon='marker' content='Vila Prudente- São Paulo (SP)' />
+    <List.Item icon='phone' content='(11) 2345-5390 / (11) 2347-1990 ' />
+    <List.Item
+      icon='mail'
+      content={<a href='mailto:oippintaudi@gmail.com'>oippintaudi@gmail.com</a>}
+    />
+  </List>
+
+
+
+
+
 
         <Grid.Row centered>
           <p>2024 - OIP - Todos os direitos reservados.</p>

@@ -7,7 +7,7 @@ import {
 
 import '../../styles/fonts.css'
 
-function ClinicaPanel() {
+function EspecialidadesPanel() {
 
     const style = {
         backgroundColor: 'rgba(0,0,0,.87)',
@@ -38,7 +38,7 @@ const segmentStyle = {
           <Grid.Row>
             <Grid.Column width={6}>
               <Header as='h3' style={{color: 'white', fontSize: '2.7em', fontFamily: 'Fonte1'}}>
-              Ambiente aconchegante, equipamentos de ponta e equipe de dentistas experientes e qualificadas
+              Oferecemos uma estrutura moderna e acolhedora (mudar texto breve)
               </Header>
             </Grid.Column>
             <Grid.Column floated='right' width={8}>
@@ -55,4 +55,4 @@ const segmentStyle = {
 
 }
 
-export default ClinicaPanel;
+export default EspecialidadesPanel;

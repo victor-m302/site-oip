@@ -1,23 +1,26 @@
-import { Segment, Header, Container, Divider } from "semantic-ui-react";
+import { Segment, Header, Container, Divider, Message } from "semantic-ui-react";
 
 import CardsEquipe from '../components/equipe/CardsEquipe'
 
 import imgEquipe2 from '../assets/homepage/17_equipe_2.jpg';
 
+import EquipePanel from '../components/equipe/EquipePanel'
 
 function Equipe() {
 
 
     return (
+    <div>
+        <EquipePanel/>
+
+        <br/><br/>
         <Container textAlign="center">
+
             <Header as="h1">
                 Dentistas
             </Header>
 
-            <Header as="h5">
-                Nossa equipe está pronta para atender.
-            </Header>
-
+            <Message color='blue'>Colocar as qualificações em bullets</Message>
 
         <CardsEquipe/>
 
@@ -33,11 +36,10 @@ function Equipe() {
             <img src={imgEquipe2} alt="img_17" style={{width: '60%'}} />
         </Segment>
 
-
-
-
-
         </Container>
+
+    </div>
+
 
     )
 }

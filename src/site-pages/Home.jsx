@@ -5,6 +5,7 @@ import HomePanel from '../components/home/HomePanel';
 import Historia from '../components/home/Historia';
 
 import NossoTrabalho from '../components/home/NossoTrabalho';
+import ResumoEspecialidades from '../components/home/ResumoEspecialidades';
 
 
 // import MyCarousel from './components/MyCarousel';
@@ -25,8 +26,10 @@ function Home() {
 
         <Historia/>
 
-        <NossoTrabalho/>
+        <ResumoEspecialidades/>
 
+        <NossoTrabalho/>
+  
       </div>
     
   )
