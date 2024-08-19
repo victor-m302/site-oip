@@ -38,7 +38,7 @@ const segmentStyle = {
           <Grid.Row>
             <Grid.Column width={6}>
               <Header as='h3' style={{color: 'white', fontSize: '2.7em', fontFamily: 'Fonte1'}}>
-              Oferecemos uma estrutura moderna e acolhedora (mudar texto breve)
+              Oferecemos tratamentos especializados para atender as suas necessidades
               </Header>
             </Grid.Column>
             <Grid.Column floated='right' width={8}>

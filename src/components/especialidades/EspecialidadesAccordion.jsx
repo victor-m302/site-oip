@@ -1,15 +1,17 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useContext, useState } from 'react';
 import { Accordion, Icon, Segment} from 'semantic-ui-react';
 
-function EspecialidadesAccordion() {
+import { EspecialidadesContext } from './EspecialidadesProvider';
 
-    const [activeIndex, setActiveIndex] = useState(0)
+function EspecialidadesAccordion() { 
+
+    const { selectedAccordion, handleAccordionClick } = useContext(EspecialidadesContext);
 
     function handleClick (e, titleProps) {
       const { index } = titleProps;
-      //const { activeIndex } = activeIndex;
-      const newIndex = activeIndex === index ? -1 : index;
-      setActiveIndex(newIndex)
+      //const { selectedAccordion } = selectedAccordion;
+      const newIndex = selectedAccordion === index ? -1 : index;
+      handleAccordionClick(newIndex)      
     };
 
     return (
@@ -20,14 +22,14 @@ function EspecialidadesAccordion() {
 
         {/* Periodontia */}
         <Accordion.Title
-          active={activeIndex === 0}
+          active={selectedAccordion === 0}
           index={0}
           onClick={handleClick}
         >
           <Icon name="dropdown" />
           Periodontia
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 0}>
+        <Accordion.Content active={selectedAccordion === 0}>
           <p>
           Periodontia é a especialidade odontológica que trata dos tecidos que dão sustentação para os dentes. 
           Seus procedimentos objetivam prevenir, diagnosticar e tratar problemas e doenças que atingem a gengiva, o ligamento periodontal e o osso alveolar. 
@@ -40,14 +42,14 @@ function EspecialidadesAccordion() {
 
         {/* Cirurgia Odontológica */}
         <Accordion.Title
-          active={activeIndex === 1}
+          active={selectedAccordion === 1}
           index={1}
           onClick={handleClick}
         >
           <Icon name="dropdown" />
           Cirurgia Odontológica
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 1}>
+        <Accordion.Content active={selectedAccordion === 1}>
           <p>
             Utilizadas para o tratamento de traumas, deformidades faciais e
             doenças. Podem se caracterizar por extrações simples e cirurgias
@@ -63,14 +65,14 @@ function EspecialidadesAccordion() {
 
         {/* Implantes Dentários */}
         <Accordion.Title
-          active={activeIndex === 2}
+          active={selectedAccordion === 2}
           index={2}
           onClick={handleClick}
         >
           <Icon name="dropdown" />
           Implantes Dentários
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 2}>
+        <Accordion.Content active={selectedAccordion === 2}>
           <p>
             O implante é um cilindro de titânio que é colocado no interior do
             osso, abaixo da gengiva e tem como objetivo substituir e fazer o
@@ -82,14 +84,14 @@ function EspecialidadesAccordion() {
 
         {/* Prótese Dentária */}
         <Accordion.Title
-          active={activeIndex === 3}
+          active={selectedAccordion === 3}
           index={3}
           onClick={handleClick}
         >
           <Icon name="dropdown" />
           Prótese Dentária
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 3}>
+        <Accordion.Content active={selectedAccordion === 3}>
           <p>
             A prótese visa substituir total ou parcialmente um ou mais dentes e
             tecidos circunvizinhos. Pode ser confeccionada de diversos materiais
@@ -101,14 +103,14 @@ function EspecialidadesAccordion() {
 
         {/* Endodontia */}
         <Accordion.Title
-          active={activeIndex === 4}
+          active={selectedAccordion === 4}
           index={4}
           onClick={handleClick}
         >
           <Icon name="dropdown" />
           Endodontia
         </Accordion.Title>
-        <Accordion.Content active={activeIndex === 4}>
+        <Accordion.Content active={selectedAccordion === 4}>
           <p>
             Também conhecida como tratamento de canal, esse processo é necessário
             em casos de inflamações causadas por cáries profundas, trauma e
@@ -123,14 +125,14 @@ function EspecialidadesAccordion() {
 
  {/* Ortodontia */}
  <Accordion.Title
-        active={activeIndex === 5}
+        active={selectedAccordion === 5}
         index={5}
         onClick={handleClick}
       >
         <Icon name="dropdown" />
         Ortodontia (imagem do invisalign)
       </Accordion.Title>
-      <Accordion.Content active={activeIndex === 5}>
+      <Accordion.Content active={selectedAccordion === 5}>
         <p>
           É a área da odontologia que estuda o crescimento e desenvolvimento da
           face e dos dentes decíduos (dentes de leite), mistos e permanentes,
@@ -144,14 +146,14 @@ function EspecialidadesAccordion() {
 
       {/* Dentística */}
       <Accordion.Title
-        active={activeIndex === 6}
+        active={selectedAccordion === 6}
         index={6}
         onClick={handleClick}
       >
         <Icon name="dropdown" />
         Dentística
       </Accordion.Title>
-      <Accordion.Content active={activeIndex === 6}>
+      <Accordion.Content active={selectedAccordion === 6}>
         <p>
           A dentística tem como objetivo recuperar a saúde bucal por meio da
           remoção de cáries e restauração dos dentes. Além disso, essa
@@ -164,14 +166,14 @@ function EspecialidadesAccordion() {
 
       {/* Odontopediatria */}
       <Accordion.Title
-        active={activeIndex === 7}
+        active={selectedAccordion === 7}
         index={7}
         onClick={handleClick}
       >
         <Icon name="dropdown" />
         Odontopediatria
       </Accordion.Title>
-      <Accordion.Content active={activeIndex === 7}>
+      <Accordion.Content active={selectedAccordion === 7}>
         <p>
           Esta é uma especialidade que trata de bebês e crianças. Tem como
           função orientar, desde a gestação, quanto aos cuidados que se deve ter
@@ -186,14 +188,14 @@ function EspecialidadesAccordion() {
 
       {/* HOF (Harmonização Orofacial) */}
       <Accordion.Title
-        active={activeIndex === 8}
+        active={selectedAccordion === 8}
         index={8}
         onClick={handleClick}
       >
         <Icon name="dropdown" />
         HOF (Harmonização Orofacial)
       </Accordion.Title>
-      <Accordion.Content active={activeIndex === 8}>
+      <Accordion.Content active={selectedAccordion === 8}>
         <p>
           A HOF consiste em uma série de procedimentos que visam melhorar as
           proporções faciais, promovendo maior simetria, reduzindo os sinais de
@@ -204,14 +206,14 @@ function EspecialidadesAccordion() {
         
   {/* Diagnóstico Digital */}
   <Accordion.Title
-        active={activeIndex === 9}
+        active={selectedAccordion === 9}
         index={9}
         onClick={handleClick}
       >
         <Icon name="dropdown" />
         Diagnóstico Digital
       </Accordion.Title>
-      <Accordion.Content active={activeIndex === 9}>
+      <Accordion.Content active={selectedAccordion === 9}>
         <p>
           Na odontologia, usamos o diagnóstico digital em praticamente todas as
           especialidades. Trata-se de um exame radiográfico utilizando um raio-X,
@@ -228,14 +230,14 @@ function EspecialidadesAccordion() {
 
       {/* Manutenção Preventiva */}
       <Accordion.Title
-        active={activeIndex === 10}
+        active={selectedAccordion === 10}
         index={10}
         onClick={handleClick}
       >
         <Icon name="dropdown" />
         Manutenção Preventiva
       </Accordion.Title>
-      <Accordion.Content active={activeIndex === 10}>
+      <Accordion.Content active={selectedAccordion === 10}>
         <p>
           Nessa área, visamos a manutenção da saúde e qualidade de vida dos
           nossos pacientes. Devemos identificar e prevenir doenças orais antes

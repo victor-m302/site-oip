@@ -2,6 +2,7 @@ import {Grid, Divider, Image } from 'semantic-ui-react';
 import EspecialidadesPanel from '../components/especialidades/EspecialidadesPanel';
 import EspecialidadesAccordion from '../components/especialidades/EspecialidadesAccordion';
 import EspecialidadesImage from '../components/especialidades/EspecialidadesImage';
+import EspecialidadesProvider from '../components/especialidades/EspecialidadesProvider';
 
 function Especialidades() {
 
@@ -12,6 +13,7 @@ function Especialidades() {
       <div>
         <EspecialidadesPanel/>
 
+        <EspecialidadesProvider>
         <Grid columns={2} relaxed='very'>
           <Grid.Column>
                 <EspecialidadesAccordion/>
@@ -24,6 +26,7 @@ function Especialidades() {
 
           </Grid.Column>
         </Grid>
+        </EspecialidadesProvider>
 
         <Divider vertical/>
  
