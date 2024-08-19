@@ -88,14 +88,14 @@ function NossoTrabalho() {
 
 
 
-      {/* <div style={{margin: '0em 4em'}}> */}
+      {/* <div style={{margin: '0em 4em'}}> 
       <Container textAlign='right'>
         <ButtonGroup>
           <Button onClick={handleButtonClick} icon='angle left' />
           <Button onClick={handleButtonClick} icon='angle right' />
         </ButtonGroup>
       </Container>
-      {/* </div> */}
+      </div> */}
 
       <br/><br/><br/>
 

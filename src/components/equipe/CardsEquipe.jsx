@@ -10,6 +10,8 @@ function CardsEquipe() {
     dra_valeska: 'dentistas/16_Dra_Valeska.jpg',
   }
 
+  // bullets alinhado esq
+
   return (
     <Card.Group itemsPerRow={4}>
       {/* Dra. Vânia */}

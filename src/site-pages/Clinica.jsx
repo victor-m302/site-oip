@@ -1,3 +1,4 @@
+import ClinicaPanel from "../components/clinica/ClinicaPanel";
 import Dentistas from "../components/clinica/Dentistas";
 import SobreClinica from "../components/clinica/SobreClinica";
 
@@ -8,6 +9,9 @@ function Clinica() {
 
     return (
         <div>
+
+            <ClinicaPanel/>
+            
             <SobreClinica/>
 
             {/* <Dentistas/> */}

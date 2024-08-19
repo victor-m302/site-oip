@@ -11,11 +11,11 @@ function Equipe() {
     return (
         <Container textAlign="center">
             <Header as="h1">
-                Doutoras
+                Dentistas
             </Header>
 
             <Header as="h5">
-                ""
+                Nossa equipe está pronta para atender.
             </Header>
 
 

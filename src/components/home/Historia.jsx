@@ -29,15 +29,6 @@ export default function Historia() {
 
             <Divider/>
 
-            <Header textAlign='left' style={{marginLeft: '10%'}}>
-                <Icon name='quote left' size='tiny' /> 
-                <Header.Content as={'h2'}>
-                    O seu sorriso é a nossa motivação
-                </Header.Content>
-            </Header>
-
-            <Divider/>
-
             <div style={paragraphStyle}>
 
                 <p>
@@ -49,8 +40,14 @@ export default function Historia() {
                 </p>
 
                 <p >
-                Contamos também com uma equipe multidisciplinar para suprir as necessidades estéticas e funcionais. O seu sorriso é a nossa motivação.
+                Contamos também com uma equipe multidisciplinar para suprir as necessidades estéticas e funcionais. 
                 </p>
+                
+                <p>
+                O seu sorriso é a nossa motivação.
+
+                </p>
+                
             </div>
 
             <Container centered>
